@@ -5,7 +5,12 @@ import { CDN_URL } from "../utils/constants"
 
 const RestaurantCard = ({resData}) => {
 	const {name, cuisines, avgRating, cloudinaryImageId, sla: { deliveryTime }, aggregatedDiscountInfoV3} = resData;
-    console.log(resData);
+    let discountInfo = "";
+
+    if(aggregatedDiscountInfoV3) {
+        const { header, subHeader } = aggregatedDiscountInfoV3;
+        discountInfo = (header ? header + " " : "") + (subHeader ? subHeader : "");
+    }
 
 	return (
 		<div className="p-0 text-sm h-full">
@@ -17,10 +22,7 @@ const RestaurantCard = ({resData}) => {
                 <div className="absolute bottom-0 left-0 right-0 h-[81px] text-left grid content-end px-3 pb-2 
                     bg-gradient-to-b from-[#1b1e2400] to-[#1b1e24] rounded-2xl">
                     <div className="font-bold text-[21px] w-auto whitespace-nowrap text-[#ffffffeb]">
-                        {aggregatedDiscountInfoV3 ? 
-                            aggregatedDiscountInfoV3?.header + " " + aggregatedDiscountInfoV3?.subHeader
-                            : null
-                        }
+                        {discountInfo}
                     </div>
                 </div>
             </div>

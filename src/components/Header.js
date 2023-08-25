@@ -14,6 +14,8 @@ const Header = () => {
     const offerstMatch = useMatch('/offers-near-me');
     const supportMatch = useMatch('/support');
     const checkoutMatch = useMatch('/checkout');
+    const homeMatch = useMatch('/');
+    const restroMatch = useMatch('/restaurant/:resId');
     
     const [showSidebar, setShowSidebar] = useState(false);
 
@@ -27,7 +29,7 @@ const Header = () => {
                     <Link to="/" className="w-14 h-14 self-center">
                         <img className="" src={logoSvg} alt="" />
                     </Link>
-                    {!checkoutMatch && <div className="ml-8 h-10 flex items-center max-w-xs self-center cursor-pointer hover:text-[#fc8019] text-sm group" onClick={() => setShowSidebar(!showSidebar)}>
+                    {(homeMatch || restroMatch) && <div className="ml-8 h-10 flex items-center max-w-xs self-center cursor-pointer hover:text-[#fc8019] text-sm group" onClick={() => setShowSidebar(!showSidebar)}>
                         <span className="relative after:content-[''] after:bottom-[-5px] after:left-0 after:absolute after:h-0.5 after:w-full after:group-hover:bg-[#fc8019] after:bg-[#3d4152]">
                             <span className="font-bold">Other</span>
                         </span>
