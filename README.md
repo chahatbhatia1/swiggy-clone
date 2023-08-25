@@ -1,8 +1,10 @@
-# Swiggy 2.0 - A Swiggy Clone Web App
+# Swiggy 2.0 - A Swiggy Clone Web App 🍔🚀
 
 Swiggy 2.0 is a personal project that replicates the popular food delivery application Swiggy. This web app is built using React, Parcel as the bundler, Tailwind CSS for styling, Redux Toolkit for state management, and Jest for testing. It incorporates various advanced React concepts and features to provide an interactive and user-friendly experience.
 
-## Features
+![Swiggy Image](./src/assets/swiggy.svg)
+
+## Features 🌟
 
 - **User Location Detection:** The app utilizes GPS to fetch the user's location and displays nearby restaurants based on their current location.
 
@@ -14,7 +16,7 @@ Swiggy 2.0 is a personal project that replicates the popular food delivery appli
 
 - **Dynamic Location Change:** The app enables users to change their location dynamically using a search API to find restaurants in different areas.
 
-## Technologies Used
+## Technologies Used 🛠️
 
 - **React:** The project is built using React, a popular JavaScript library for building user interfaces.
 
@@ -26,7 +28,7 @@ Swiggy 2.0 is a personal project that replicates the popular food delivery appli
 
 - **Jest:** Jest is the chosen testing library for unit testing components and ensuring their functionality.
 
-## Advanced React Concepts
+## Advanced React Concepts 🚀
 
 - **Custom Hooks:** The app utilizes custom hooks to encapsulate and reuse logic, improving code organization and reusability.
 
@@ -34,25 +36,25 @@ Swiggy 2.0 is a personal project that replicates the popular food delivery appli
 
 - **React Portals:** React portals are used to render modals and overlays, providing a better user experience for certain interactions.
 
-## Project Setup
+## Project Setup ⚙️
 
 To set up and run the project locally:
 
-1. Clone the repository: `git clone [repository_url]`
-2. Navigate to the project directory: `cd swiggy-2.0`
+1. Clone the repository: `git clone https://github.com/chahatbhatia1/swiggy-clone.git`
+2. Navigate to the project directory: `cd swiggy-clone`
 3. Install dependencies: `npm install`
-4. Start the development server: `npm start`
+4. Start the development server: `npm start` or `npm run start`
 
-## Testing
+## Testing 🧪
 
 The project includes a suite of tests written using Jest to ensure the reliability and correctness of the components.
 
 To run the tests:
 
 ```bash
-npm test
+npm run test
 ```
 
-## Conclusion
+# Conclusion  🎉
 
 Swiggy 2.0 is a feature-rich web app that mimics the Swiggy food delivery platform. It is built using cutting-edge technologies and incorporates advanced React concepts to provide a seamless and interactive user experience. The app's user location detection, restaurant sorting, and cart management features make it a user-friendly and practical application for users to explore and order from various restaurants.
