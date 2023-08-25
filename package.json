@@ -1,0 +1,43 @@
+{
+  "name": "swiggy-2.0-clone",
+  "version": "1.0.0",
+  "description": "This is the best Swiggy Clone ever made",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Chahat Bhatia",
+  "license": "ISC",
+  "homepage": "",
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-react": "^7.22.5",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^14.0.0",
+    "babel-jest": "^29.6.2",
+    "jest": "^29.6.2",
+    "jest-environment-jsdom": "^29.6.2",
+    "parcel": "^2.8.3",
+    "postcss": "^8.4.26",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
+    "canvas-confetti": "^1.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
+    "react-redux": "^8.1.1",
+    "react-router-dom": "^6.11.2"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}

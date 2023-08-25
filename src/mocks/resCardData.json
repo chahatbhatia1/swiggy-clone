@@ -1,0 +1,89 @@
+{
+    "id": "112542",
+    "name": "Pandit restaurant",
+    "cloudinaryImageId": "wlw8gt9hxvjcr1pwi54x",
+    "locality": "Mahaveer Circle",
+    "areaName": "Ganj",
+    "costForTwo": "₹250 for two",
+    "cuisines": [
+        "Pastas",
+        "Chinese",
+        "North Indian",
+        "Burgers",
+        "Biryani"
+    ],
+    "avgRating": 4,
+    "veg": true,
+    "feeDetails": {
+        "restaurantId": "112542",
+        "fees": [
+            {
+                "name": "BASE_DISTANCE",
+                "fee": 500
+            },
+            {
+                "name": "BASE_TIME"
+            },
+            {
+                "name": "ANCILLARY_SURGE_FEE"
+            }
+        ],
+        "totalFee": 500
+    },
+    "parentId": "6821",
+    "avgRatingString": "4.0",
+    "totalRatingsString": "5K+",
+    "sla": {
+        "deliveryTime": 22,
+        "lastMileTravel": 2.9,
+        "serviceability": "SERVICEABLE",
+        "slaString": "22 mins",
+        "lastMileTravelString": "2.9 km",
+        "iconType": "ICON_TYPE_EMPTY"
+    },
+    "availability": {
+        "nextCloseTime": "2023-08-11 23:00:00",
+        "opened": true
+    },
+    "badges": {},
+    "isOpen": true,
+    "type": "F",
+    "badgesV2": {
+        "entityBadges": {
+            "imageBased": {},
+            "textBased": {},
+            "textExtendedBadges": {}
+        }
+    },
+    "aggregatedDiscountInfoV3": {
+        "header": "₹125 OFF",
+        "subHeader": "ABOVE ₹199",
+        "discountTag": "FLAT DEAL",
+        "discountCalloutInfo": {
+            "message": "Free Delivery",
+            "logoCtx": {
+                "logo": "v1655895371/free_delivery_logo_hqipbo.png"
+            }
+        }
+    },
+    "orderabilityCommunication": {
+        "title": {},
+        "subTitle": {},
+        "message": {},
+        "customIcon": {}
+    },
+    "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+            "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+            "lottie": {},
+            "video": {}
+        }
+    },
+    "reviewsSummary": {},
+    "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    "restaurantOfferPresentationInfo": {}
+}
+
+
+    
