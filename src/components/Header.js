@@ -33,7 +33,7 @@ const Header = () => {
                         <span className="relative after:content-[''] after:bottom-[-5px] after:left-0 after:absolute after:h-0.5 after:w-full after:group-hover:bg-[#fc8019] after:bg-[#3d4152]">
                             <span className="font-bold">Other</span>
                         </span>
-                        <span className="ml-2 font-light group-hover:text-[#686b78a7] text-[#686b78]">{address}</span>
+                        <span className="ml-2 font-light group-hover:text-[#686b78a7] text-[#686b78] truncate text-ellipsis">{address}</span>
                         <span className="text-[#fc8019] text-xl ml-2">
                             <PiCaretDownBold size={18} />
                         </span>
