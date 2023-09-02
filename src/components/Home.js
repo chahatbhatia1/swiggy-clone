@@ -29,8 +29,8 @@ const Home = () => {
             const {data} = await res.json()
             
             //console.log(data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants[0]);
-            setListOfRestaurants(data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-            setSortedRestaurants(data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+            setListOfRestaurants(data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+            setSortedRestaurants(data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         } catch(error) {
             console.error(error);
         }
