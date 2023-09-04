@@ -27,10 +27,11 @@ const Home = () => {
         try {
             const res = await fetch(`${CORS_PROXY_URL}https://www.swiggy.com/dapi/restaurants/list/v5?lat=${lat}&lng=${lng}&page_type=DESKTOP_WEB_LISTING`)
             const {data} = await res.json()
+
+            const [restGridObj] = data?.cards?.filter(({ card: { card } }) => card?.id === "top_brands_for_you")
             
-            //console.log(data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants[0]);
-            setListOfRestaurants(data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-            setSortedRestaurants(data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+            setListOfRestaurants(restGridObj?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+            setSortedRestaurants(restGridObj?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         } catch(error) {
             console.error(error);
         }
